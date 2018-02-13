@@ -43,4 +43,4 @@
 - Examples: Merge Sort, Quick Sort, and many more
 
 
-assets/big_o-2a6e5.png
+[assets/big_o-2a6e5.png](./assets/big_o-2a6e5.png)
