@@ -58,3 +58,29 @@ def bubble(arr, swapped = True):
 		return bubble(arr, swapped)		
 
 ```
+- - - -
+
+### Insertion Sort - O(n^2)
+- Takes each item and deals with it one at a time building the final sorted array in place.  similar to sorting a hand of cards
+
+```python
+arr = [10, 15, 9, 25, 17, 2, 99, 109, 34, 72, 40]   
+
+for i in range(1, len(arr)): 				# Assume first element is sorted 	
+	el = arr[i] 							# Grab value we're inserting
+	while i > 0 and el < arr[i-1]: 			# Go through sorted portion of array
+		arr[i], arr[i-1] = arr[i-1], arr[i]# Swap values until el is in proper place
+		i -= 1								# decrement to check backwards neighbor
+
+# Recursive Insertion Sort
+def insertion(arr, start=0):
+	if start == len(arr):					# If were at the end, arrays sorted
+		return arr							# Return sorted array
+	else:
+		el = arr[start]						# Grab our current element
+		index = start						# Grab its index
+		while index > 0 and el < arr[index-1]:		# Work backwards comparing el
+			arr[index], arr[index-1] = arr[index-1], arr[index] # Swap out of order
+			index -= 1						# Check the next neighbor
+		return insertion(arr,start+1)		# Call again with next element
+```
