@@ -42,4 +42,19 @@ while swap_made:				# If no swaps are made then array is sorted
 			arr[i], arr[i+1] = arr[i+1], arr[i]
 			swap_made = True	# Set swap made so we keep going
 
+
+# Recursive Bubble Sort
+def bubble(arr, swapped = True):
+	if not swapped:
+		return arr
+	else:
+		swapped = False
+		for i in range(len(arr)-1):
+			first = arr[i]
+			second = arr[i+1]
+			if first > second:
+				arr[i], arr[i+1] = arr[i+1], arr[i]
+				swapped = True
+		return bubble(arr, swapped)		
+
 ```
