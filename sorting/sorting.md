@@ -84,3 +84,41 @@ def insertion(arr, start=0):
 			index -= 1						# Check the next neighbor
 		return insertion(arr,start+1)		# Call again with next element
 ```
+- - - -
+
+### Merge Sort - O(n log n)
+- Divide and conquer algorithm
+- Divides input into two halves, sorts the two halves and then merges the sorted halves
+- Faster but requires more memory
+- Heavy lifting takes place in merging two halves
+```python
+def merge_sort(arr):
+	if len(arr) == 1:		# Array len of 1 is already sorted so just return		
+		return arr
+
+	mid = len(arr) // 2		# Otherwise, find the midpoint of the array
+	first = merge_sort(arr[:mid])	# Sort the first half
+	second = merge_sort(arr[mid:]) # Sort the second half
+	return merge(first,second)		# Merge the two halves back together
+
+def merge(first,second):
+	merged = []		# Array to hold sorted elements
+	f_index = 0		# Counter for first array index
+	s_index = 0		# Counter for second array index
+
+	# Iterate while we have not finished placing one of the halves
+	while f_index < len(first) and s_index < len(second):
+		f_val = first[f_index]		# Grab first array val at current index
+		s_val = second[s_index]		# Grab second array val at current index
+
+		if f_val < s_val:
+			merged.append(f_val)	# Add first value to sorted array if its lower
+			f_index += 1			# Increment our index for first array
+		else:
+			merged.append(s_val)	# If first value isn't lower, add second to sorted
+			s_index += 1			# Increment our index for second array
+
+	# Return our sorted list with remaining elements either the first or second array
+	# Remaining elements are implicitly sorted and are the highest elements left
+	return merged + first[f_index:] + second[s_index:]
+```
