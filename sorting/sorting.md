@@ -129,7 +129,7 @@ def merge(first,second):
 - We pick a partition spot, usually the last element, and move all elements lower than the partitions value before it and all elements higher than partition spot after it. Basically,  putting the value of the partition index in its correct spot on each call and then updating the call to take the elements below and the elements above it
 ```python
 import random
-
+# QuickSort - Lomuto Partition
 # Consumes the array to be sorted, the low index, usually 0, and the high index
 def quick_sort(arr, low, high):
 	# we'll keep making recusive calls until the low index is less than high index
@@ -162,6 +162,45 @@ def partition(arr, low, high):
 	arr[piv_index], arr[high] = arr[high], arr[piv_index]
 	# Return the index of where we just sorted
 	return piv_index
+
+arr = [ random.randrange(0,100) for i in range(0,100) ]
+quick_sort(arr, 0, len(arr) - 1)
+
+# QuickSort - Hoare Partition
+def quick_sort(arr, low, high):
+	# Keep going while our low and high values don't cross
+	if low < high:
+		# Get a partition point
+		par = partition(arr, low, high)
+		# Sort subarray of low index to parition index
+		quick_sort(arr, low, par)
+		# Sort subarray of parition to high index
+		quick_sort(arr, par + 1, high)
+
+# Heavy lifting takes place here
+def partition(arr, low, high):
+	# Use low value as our sort value
+	piv_value = arr[low]
+	# Start low index at lowest point in subarray
+	piv_low = low
+	# Start high index at highest point in subarray
+	piv_high = high
+
+	# Loop until we've correctly placed our piv_value
+	while True:
+		# While value at piv_low < piv_value, Increment our piv_low index
+		while arr[piv_low] < piv_value:
+			piv_low += 1
+		# While value at piv_high > piv_value, decrement our piv_high index
+		while arr[piv_high] > piv_value:
+			piv_high -= 1
+
+		# If our index values touch, piv_value index is correct. Return index
+		if piv_low >= piv_high:
+			return piv_high
+		# Otherwise, swap values at piv_low and piv_high index
+		else:
+			arr[piv_low], arr[piv_high] = arr[piv_high], arr[piv_low]
 
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 quick_sort(arr, 0, len(arr) - 1)
