@@ -7,12 +7,17 @@
 - - - -
 
 #### Law of Addition and Multiplication for O()
--  Focus on the dominant terms
+-  Focus on the dominant terms, dropping non-dominant terms
 - `O(n) + O(n + n) = O(n + n^2) = O(n^2)` <- because of dominant terms
 	- Applicable for sequential operations
 - `O(n) * O(n) = O(n * n) = O(n^2)`
 	- Applicable with nested loops
 - `f(n) = 7log(n)^3 + 15n^2 + 2n^3 + 8` -> `O(f(n)) = O(n^3)`   <- because of dominant term
+- If you have multiple steps, you add up those steps:
+	- Step 1 (O(a)) + Step 2 (O(b)) = `O(a+b)`
+	- If a == size of input and b == size of input then `O(n+n) = O(2n) = O(n)`
+- Constants are dropped -> `O(n+n) = O(2n) = O(n)`
+- Different inputs typically result in different variables to represent them in Big-O
 - - - -
 
 `n = size of input`
