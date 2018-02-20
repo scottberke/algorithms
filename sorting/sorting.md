@@ -202,3 +202,11 @@ def partition(arr, low, high):
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 quick_sort(arr, 0, len(arr) - 1)
 ```
+***
+
+### Heap Sort
+TODO
+***
+
+### Radix Sort
+TODO
