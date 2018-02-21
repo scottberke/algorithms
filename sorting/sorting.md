@@ -134,7 +134,7 @@ This sort considered to be an efficient, comparison based, general purpose sorti
 
 - - - -
 
-## Quick Sort - O(n log n)
+## Quick Sort
 ### Runtime:
 **O(n log n)** Average, Worst: O(n^2)
 Memory: O(log n)
@@ -172,6 +172,28 @@ Quick sort is another divide and conquer sorting algorithm that works in-place a
 
 
 ***
+
+## Bucket Sort
+### Runtime:
+**O(n^2)** Can be O(n) with evenly distributed data set
+Memory: O(n*k)
+
+### Description:
+Bucket sort is another divide and conquer sort. It works by putting the array into a series of buckets distributed in the range of the data and then sorts the buckets before recombinding them. This sort works best when you have a uniformly distributed data set
+
+### Use Cases:
+- Good for data like sorting people based on age when the values are uniformly distributed
+
+### Steps:
+1. Get max value and length from array being sorted
+2. Create an array of buckets thats the lenght of the array being sorted
+3. Iterate through the array being sorted
+4. Place values into buckets corresponding to the value * array length / max value + 1
+5. Sort each of the buckets with any sorting algorithm
+6. Return flattened array of buckets
+
+### Examples:
+- [Python](./bucket_sort.py)
 
 ### Heap Sort
 TODO
