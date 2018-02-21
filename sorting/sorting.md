@@ -100,42 +100,38 @@ This sort works in-place and is stable. It works by building a final sorted arra
 
 - - - -
 
-### Merge Sort - O(n log n)
+## Merge Sort
+### Runtime:
+**O(n log n)** Average and worst case
+Memory: varies
+
+### Description:
+This sort considered to be an efficient, comparison based, general purpose sorting algorithm. Merge sort is a divide and conquer algorithm. This sort works by repeatedly dividing the array to be sorted into smaller subarrays until the subarrays are of length 1. Arrays of length 1 are implicitly sorted, so this algorithm will merge all subarrays until the array is fully sorted.
+
 - Divide and conquer algorithm
 - Divides input into two halves, sorts the two halves and then merges the sorted halves
 - Faster but requires more memory
 - Heavy lifting takes place in merging two halves
-```python
-def merge_sort(arr):
-	if len(arr) == 1:		# Array len of 1 is already sorted so just return		
-		return arr
 
-	mid = len(arr) // 2		# Otherwise, find the midpoint of the array
-	first = merge_sort(arr[:mid])	# Sort the first half
-	second = merge_sort(arr[mid:]) # Sort the second half
-	return merge(first,second)		# Merge the two halves back together
+### Use Cases:
+- Considered more efficient for large sets of data when compared to other sorts such as selection, insertion and bubble
+- Often choosen when sorting linked lists
 
-def merge(first,second):
-	merged = []		# Array to hold sorted elements
-	f_index = 0		# Counter for first array index
-	s_index = 0		# Counter for second array index
+### Steps:
+1. Find the middle point of the array to be sorted
+2. Call merge sort on the first half of the array
+3. Call merge sort on the second half of the array
+4. Merge both sides together
+	1. Create an empty array to hold sorted/merged elements
+	2. Initialize counters to track indices of both sides being merged
+	3. Iterate while both sides still have values to merge
+	4. Add lowest value among both sides to the merged array and increment index of that side
+	5. Return merged array with any remaining values from remaining side which are implicitly sorted/higher than merged arrays highest value
 
-	# Iterate while we have not finished placing one of the halves
-	while f_index < len(first) and s_index < len(second):
-		f_val = first[f_index]		# Grab first array val at current index
-		s_val = second[s_index]		# Grab second array val at current index
 
-		if f_val < s_val:
-			merged.append(f_val)	# Add first value to sorted array if its lower
-			f_index += 1			# Increment our index for first array
-		else:
-			merged.append(s_val)	# If first value isn't lower, add second to sorted
-			s_index += 1			# Increment our index for second array
+### Examples:
+- [Python](./merge_sort.py)
 
-	# Return our sorted list with remaining elements either the first or second array
-	# Remaining elements are implicitly sorted and are the highest elements left
-	return merged + first[f_index:] + second[s_index:]
-```
 - - - -
 
 ### Quick Sort - O(n log n)
