@@ -1,28 +1,36 @@
-## Sorting
+# Sorting
 - Beyond obvious benefits of having a sorted data structure, sorting allows efficient searching
 	- Searching from random group -> difficult
 	- Searching from sorted group -> easier
 - - - -
 
-### Selection Sort - O(n^2)
-- Iteratively select the next smallest element
+### Sorting Algorithms
+- Selection Sort
+- Bubble Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Bucket Sort
+
+## Selection Sort - O(n^2)
+### Description:
+This sort works in-place and is a comparison sort. It works by iteratively selecting the next smallest element from an array and placing it at the end of the sorted subarray.
+
 - Maintains two subarrays in given array:
-	- Already sorted array
-	- Remaining unsorted array
+	1. Already sorted array
+	2. Remaining unsorted array
 - Selection sort never makes more than O(n) swaps -> good when memory writing is costly
-```python
-arr = [10, 15, 9, 25, 17, 2, 99, 109, 34, 72, 40]
 
-for i in range(len(arr)): # Start at the begining of the array
-	min_index = i			 # Assume the current position is the min value
+### Steps:
+1. Find the minimum element in the array
+2. Place element at the beginning of the array
+3. Find the minimum element in the remaining unsorted array
+4. Place that at the end of the sorted array
+5. Repeat until nothing remains in the unsorted array
 
-	for j in range(i+1, len(arr)):  # Go through the remaining values  
+### Examples:
+- [Python](./selection_sort.py)
 
-		if arr[j] < arr[min_index]: # If we find a lower value
-			min_index = j 			 # Update min position to lower value
-
-	arr[i], arr[min_index] = arr[min_index], arr[i] # Swap start position with min
-```
 - - - -
 
 ### Bubble Sort - O(n^2)
