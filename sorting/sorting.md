@@ -71,30 +71,33 @@ This sort works in-place and is a comparison sort. It works by iteratively evalu
 
 - - - -
 
-### Insertion Sort - O(n^2)
-- Takes each item and deals with it one at a time building the final sorted array in place.  similar to sorting a hand of cards
+## Insertion Sort
+### Runtime:
+**O(n^2)** Average and worst case
+Memory: O(1)
 
-```python
-arr = [10, 15, 9, 25, 17, 2, 99, 109, 34, 72, 40]   
+### Description:
+This sort works in-place and is stable. It works by building a final sorted array, one item at a time. Insertion sort maintains two subarrays, a sorted and non-sorted array, and iteratively selects items to place into their correct place in the sorted array.
 
-for i in range(1, len(arr)): 				# Assume first element is sorted 	
-	el = arr[i] 							# Grab value we're inserting
-	while i > 0 and el < arr[i-1]: 			# Go through sorted portion of array
-		arr[i], arr[i-1] = arr[i-1], arr[i]# Swap values until el is in proper place
-		i -= 1								# decrement to check backwards neighbor
+- Maintains two subarrays within given array:
+	1. Already sorted array
+	2. Remaining unsorted array
+- Takes each item and deals with it one at a time building the final sorted array in place. Similar to sorting a hand of cards
 
-# Recursive Insertion Sort
-def insertion(arr, start=0):
-	if start == len(arr):					# If were at the end, arrays sorted
-		return arr							# Return sorted array
-	else:
-		el = arr[start]						# Grab our current element
-		index = start						# Grab its index
-		while index > 0 and el < arr[index-1]:		# Work backwards comparing el
-			arr[index], arr[index-1] = arr[index-1], arr[index] # Swap out of order
-			index -= 1						# Check the next neighbor
-		return insertion(arr,start+1)		# Call again with next element
-```
+### Use Cases:
+- Good for use with smaller data sets. Preferable, performance-wise over bubble and selection sort
+
+### Steps:
+1. Consider the first element in the array to be sorted
+2. Iterate from index 1 through end of the array
+3. Insert next value from unsorted array into sorted side of array
+	1. Backtrack through sorted array from i-1 to zero
+	2. If the value being inserted is < element in sorted side, swap them
+
+### Examples:
+- [Python](./insertion_sort.py)
+- [Python - Recursive](./insertion_sort_recur.py)
+
 - - - -
 
 ### Merge Sort - O(n log n)

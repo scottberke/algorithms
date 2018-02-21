@@ -8,3 +8,4 @@ Compiled from class work and online resources
 ## Sorting
   - [Selection Sort - O(n^2)](./sorting/sorting.md#selection-sort)
   - [Bubble Sort - O(n^2)](./sorting/sorting.md#bubble-sort)
+  - [Insertion Sort - O(n^2)](./sorting/sorting.md#insertion-sort)
