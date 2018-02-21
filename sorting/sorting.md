@@ -1,7 +1,9 @@
 # Sorting
+- Used to place elements of a list in a certain order
 - Beyond obvious benefits of having a sorted data structure, sorting allows efficient searching
 	- Searching from random group -> difficult
 	- Searching from sorted group -> easier
+- Stable sort algorithms sort identical elements in the same order as they appear when inputed
 - - - -
 
 ### Sorting Algorithms
