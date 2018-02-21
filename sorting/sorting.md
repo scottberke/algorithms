@@ -134,84 +134,43 @@ This sort considered to be an efficient, comparison based, general purpose sorti
 
 - - - -
 
-### Quick Sort - O(n log n)
-- Another divide and conquer sort algorithm
+## Quick Sort - O(n log n)
+### Runtime:
+**O(n log n)** Average, Worst: O(n^2)
+Memory: O(log n)
+
+### Description:
+Quick sort is another divide and conquer sorting algorithm that works in-place and is a comparison sort. This sort works by finding a partition value and moving all elements smaller than the partition value to the left of it and all items greater than the partition value to the right of it.
+
 - We pick a partition spot, usually the last element, and move all elements lower than the partitions value before it and all elements higher than partition spot after it. Basically,  putting the value of the partition index in its correct spot on each call and then updating the call to take the elements below and the elements above it
-```python
-import random
-# QuickSort - Lomuto Partition
-# Consumes the array to be sorted, the low index, usually 0, and the high index
-def quick_sort(arr, low, high):
-	# we'll keep making recusive calls until the low index is less than high index
-	if low < high:
-		# We find out parition index, which is the index of the item just sorted into place. This index value will be correctly sorted
-		par = partition(arr, low, high)
+- Heavy lifting takes place in the partition step
+- Performance varies depending on how or where you choose your partition pivot
+- Not stable ie same value elements dont remain in the same order
+- Two popular partition schemes: Lomuto and Hoare
+	- Hoare is considered more performant
 
-		# With par index in its correct place, we do the same thing for the values below par and above par index
-		quick_sort(arr, low, par - 1)
-		quick_sort(arr, par + 1, high)
+### Use Cases:
+- Not good when same value items need to remain in order
+- Operates in place so uses less memory than merge sort
+- Merge sort generally preferred over this with very large data sets
 
-# Heavy lifting takes place here. Consumes arrayto be sorted, low and high index
-def partition(arr, low, high):
-	# piv_index keeps track of where all elements lower than our piv value end. We start at the lowest value as our first place to check
-	piv_index = low
-	# piv_value is the last item in the array and the item we want to put in sorted order
-	piv_value = arr[high]
-	# Iterate from low index through high index checking
-	for i in range(low, high):
-		# If our value at i is less than the value were sorting into place 	
-		if arr[i] <= piv_value:
-			# We swap the piv_index value, with the i element, essentially taking elements lower than our piv_value and placing them all within the range from low to piv_index
-			arr[piv_index], arr[i] = arr[i], arr[piv_index]
-			# Update piv_index to keep track of where all lower than elements end
-			piv_index += 1
-	# We swap the value were sorting into the position just above all elements lower than itself
-	arr[piv_index], arr[high] = arr[high], arr[piv_index]
-	# Return the index of where we just sorted
-	return piv_index
+### Steps:
+1. Pick a pivot point from the array
+2. Reorder the array so that elements < pivot come before the pivot and elements > pivot come after the pivot
+	1. Grab low index as start of compare point
+	2. Grab high index value as our pivot value
+	3. Iterate from low to high index
+	4. If we find a value at index thats <= our pivot value
+	5. Swap our compare point with our index values
+	6. Increment our pivot point compare index
+	7. Swap pivot value with pivot index value
+3. Call QuickSort on the remaining sides > and < the pivot point
 
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-quick_sort(arr, 0, len(arr) - 1)
+### Examples:
+- [Python - Lomuto Partition](./quick_sort.py)
+- [Python - Hoare Partition](./quick_sort_hoare.py)
 
-# QuickSort - Hoare Partition
-def quick_sort(arr, low, high):
-	# Keep going while our low and high values don't cross
-	if low < high:
-		# Get a partition point
-		par = partition(arr, low, high)
-		# Sort subarray of low index to parition index
-		quick_sort(arr, low, par)
-		# Sort subarray of parition to high index
-		quick_sort(arr, par + 1, high)
 
-# Heavy lifting takes place here
-def partition(arr, low, high):
-	# Use low value as our sort value
-	piv_value = arr[low]
-	# Start low index at lowest point in subarray
-	piv_low = low
-	# Start high index at highest point in subarray
-	piv_high = high
-
-	# Loop until we've correctly placed our piv_value
-	while True:
-		# While value at piv_low < piv_value, Increment our piv_low index
-		while arr[piv_low] < piv_value:
-			piv_low += 1
-		# While value at piv_high > piv_value, decrement our piv_high index
-		while arr[piv_high] > piv_value:
-			piv_high -= 1
-
-		# If our index values touch, piv_value index is correct. Return index
-		if piv_low >= piv_high:
-			return piv_high
-		# Otherwise, swap values at piv_low and piv_high index
-		else:
-			arr[piv_low], arr[piv_high] = arr[piv_high], arr[piv_low]
-
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-quick_sort(arr, 0, len(arr) - 1)
-```
 ***
 
 ### Heap Sort
