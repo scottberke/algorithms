@@ -14,7 +14,8 @@
 - Quick Sort
 - Bucket Sort
 
-## Selection Sort - O(n^2)
+## Selection Sort
+
 ### Description:
 This sort works in-place and is a comparison sort. It works by iteratively selecting the next smallest element from an array and placing it at the end of the sorted subarray.
 
