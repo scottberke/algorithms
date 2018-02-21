@@ -7,7 +7,7 @@
 - - - -
 
 ### Sorting Algorithms
-- Selection Sort
+- [Selection Sort - O(n^2)](#selection-sort)  
 - Bubble Sort
 - Insertion Sort
 - Merge Sort
@@ -16,15 +16,19 @@
 
 ## Selection Sort
 ### Runtime
-O(n^2)
+**O(n^2)** Average and worst case.
+Memory: O(1)
 
 ### Description:
 This sort works in-place and is a comparison sort. It works by iteratively selecting the next smallest element from an array and placing it at the end of the sorted subarray.
 
-- Maintains two subarrays in given array:
+- Maintains two subarrays within given array:
 	1. Already sorted array
 	2. Remaining unsorted array
 - Selection sort never makes more than O(n) swaps -> good when memory writing is costly
+### Use Cases:
+- Has performance advantages over more complicated sorts when memory is limited
+- Can be used for smaller data sets
 
 ### Steps:
 1. Find the minimum element in the array
@@ -38,39 +42,33 @@ This sort works in-place and is a comparison sort. It works by iteratively selec
 
 - - - -
 
-### Bubble Sort - O(n^2)
+## Bubble Sort
+### Runtime:
+**O(n^2)** Average and worst case
+Memory: O(1)
+
+### Description:
+This sort works in-place and is a comparison sort. It works by iteratively evaluating pairs in an array and swapping larger elements forward. Largest element iteratively 'bubbles' to the end of the array
+
 - Repeatedly swaps adjacent elements if they’re in the wrong order
 	- Largest value ‘bubbles’ up to the end
-- Sorts in place
-```python
-arr = [10, 15, 9, 25, 17, 2, 99, 109, 34, 72, 40]
+- Considered a simple sorting algorithm
+### Use Cases:
+- Good for small number of items - Where asymptotic inefficiency is not high
+- Good for a list thats nearly sorted
+- Not good for large, high unordered sets
 
-swap_made = True 				# Keeps track of whether or not a swap occured
-while swap_made:				# If no swaps are made then array is sorted
-	swap_made = False			# Set to false since no swaps have been made yet
-	for i in range(len(arr)-1):	# Iterate through array len - 1
-		first = arr[i]			
-		second = arr[i+1]
-		if first > second:		# If we find a value pair out of order swap them
-			arr[i], arr[i+1] = arr[i+1], arr[i]
-			swap_made = True	# Set swap made so we keep going
+### Steps:
+1. Create a loop that continues until no elements have been swapped
+2. Within the loop, iterate through elements in the array
+3. Grab two sequential elements
+4. If those elements are out of numerical order, swap the elements
+5. Record that a swap has been made
+6. Repeat until no swaps have been made
 
+### Examples:
+- [Python](./bubble_sort.py)
 
-# Recursive Bubble Sort
-def bubble(arr, swapped = True):
-	if not swapped:
-		return arr
-	else:
-		swapped = False
-		for i in range(len(arr)-1):
-			first = arr[i]
-			second = arr[i+1]
-			if first > second:
-				arr[i], arr[i+1] = arr[i+1], arr[i]
-				swapped = True
-		return bubble(arr, swapped)		
-
-```
 - - - -
 
 ### Insertion Sort - O(n^2)
