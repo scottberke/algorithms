@@ -6,4 +6,4 @@ Compiled from class work and online resources
   - [Big-O](./big_o/big_o.md)
 
 ## Sorting
-  - [Selection Sort](./sorting.md#Selection Sort)
+  - [Selection Sort](./sorting/sorting.md#Selection Sort)
