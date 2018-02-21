@@ -15,6 +15,8 @@
 - Bucket Sort
 
 ## Selection Sort
+### Runtime
+O(n^2)
 
 ### Description:
 This sort works in-place and is a comparison sort. It works by iteratively selecting the next smallest element from an array and placing it at the end of the sorted subarray.
