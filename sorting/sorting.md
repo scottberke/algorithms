@@ -6,6 +6,9 @@
 - Stable sort algorithms sort identical elements in the same order as they appear when inputed
 - - - -
 
+[Interview Questions](#interview-questions)
+
+
 ### Sorting Algorithms
 - [Selection Sort - O(n^2)](#selection-sort)  
 - Bubble Sort
@@ -201,3 +204,7 @@ TODO
 
 ### Radix Sort
 TODO
+
+
+## Interview Questions
+- [Sorted Merge](./interview_questions.md#sorted-merge)
