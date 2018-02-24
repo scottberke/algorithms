@@ -1,5 +1,7 @@
 # Sorted Merge
 
+# Hint: Try working from the end to the begining
+
 # This method takes a 'python' approach where the array doesnt nessecarily
 # have a buffer but is dynamic in size.
 def merge(a_arr, b_arr):
