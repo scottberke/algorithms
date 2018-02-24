@@ -14,4 +14,4 @@ Compiled from class work and online resources
   - [Bucket Sort - O(n log n)](./sorting/sorting.md#bucket-sort)
 
 ### Interview Questions
-- [Sorted Merge](./sorting/interview_questions.md#sorted-merge)
+- [Sorted Merge](./sorting/interview_questions/interview_questions.md#sorted-merge)

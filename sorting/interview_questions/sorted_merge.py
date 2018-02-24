@@ -1,7 +1,5 @@
 # Sorted Merge
 
-# Hint: Try working from the end to the begining
-
 # This method takes a 'python' approach where the array doesnt nessecarily
 # have a buffer but is dynamic in size.
 def merge(a_arr, b_arr):
@@ -21,18 +19,16 @@ def merge(a_arr, b_arr):
                 return a_arr + b_arr[b_index:]
 
         # Insert b_val into a where it belongs
-        a.insert(a_index, b_val)
+        a_arr.insert(a_index, b_val)
 
     return a_arr
 
-a = [1, 3, 5, 7, 9, 11, 32, 41]
-b = [2, 4, 6, 8, 15, 25, 52]
-print(merge(a, b))
+
 
 
 # This approach assumes that the a array is actually fixed size with an
 # adequate buffer to hold all of b array
-def merge(a_arr, b_arr):
+def buffer_merge(a_arr, b_arr):
     # If either array is empty just concatenate them and return
     if not a_arr or not b_arr:
         return a_arr + b_arr
@@ -61,7 +57,4 @@ def merge(a_arr, b_arr):
         # Update our end index
         a_end -= 1
 
-a = [1, 3, 5, 7, None, None, None, None]
-b = [2, 4, 6, 8]
-merge(a, b)
-print(a)
+    return a_arr
