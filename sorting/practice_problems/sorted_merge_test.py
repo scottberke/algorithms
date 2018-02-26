@@ -2,6 +2,7 @@ import unittest
 
 from sorted_merge import *
 
+# Hints at bottom of page
 
 class SortedMergeTest(unittest.TestCase):
     def test_merge(self):
@@ -24,7 +25,24 @@ class SortedMergeTest(unittest.TestCase):
             expected
         )
 
+    def test_merge_w_one_empty(self):
+        a = [1, 3, 5, 7, 9, 11, 32, 41]
+        b = []
 
+        self.assertEqual(
+            merge(a, b),
+            a
+        )
+
+
+    def test_buffer_merge_w_one_empty(self):
+        a = [1, 3, 5, 7, 9, 11, 32, 41]
+        b = []
+
+        self.assertEqual(
+            buffer_merge(a, b),
+            a
+        )
 
 if __name__ == '__main__':
     unittest.main()

@@ -3,6 +3,9 @@
 # This method takes a 'python' approach where the array doesnt nessecarily
 # have a buffer but is dynamic in size.
 def merge(a_arr, b_arr):
+    # O(a+b) where a and b are lengths of respective input Arrays
+    # We go through b array once while placing it into a array 
+
     # If either array is empty just concatenate them and return
     if not a_arr or not b_arr:
         return a_arr + b_arr

@@ -13,5 +13,5 @@ Compiled from class work and online resources
   - [Quick Sort - O(n log n)](./sorting/sorting.md#quick-sort)
   - [Bucket Sort - O(n log n)](./sorting/sorting.md#bucket-sort)
 
-### Interview Questions
-- [Sorted Merge](./sorting/interview_questions/interview_questions.md#sorted-merge)
+### Practice Problems
+- [Sorted Merge](./sorting/practice_problems/practice_problems.md#sorted-merge)
