@@ -3,7 +3,11 @@
 - Choosing the correct search algorithm depends on the data structure being searched
 ***
 
-### Linear Search - O(n)
+### Practice Problems
+- [Search in Rotated Array](./practice_problems/practice_problems.md#search-in-rotated-arrar)
+
+### Linear Search  
+**O(n)**
 - Simplest search approach:
 	1. Start from left most element in array
 	2. Compare elements, one by one, with target
@@ -21,7 +25,8 @@ def search(arr, target):
 ```
 - - - -
 
-### Binary Search - O(log n)
+### Binary Search  
+**O(log n)**
 - Requires that the array is sorted prior to search
 - Works by repeatedly dividing the search interval in half
 	1. Check the target against the middle element
@@ -48,7 +53,7 @@ def search(arr, target):
 
 	while low <= high:			# Repeat until low index > high index
 		mid = low + ((high - low) // 2) 	# Grab our mid point index
-		# pdb.set_trace()
+
 		if arr[mid] == target:	# If value at midpoint is target, return index
 			return mid
 		elif arr[mid] > target:	# If midpoint value > target, increment high index

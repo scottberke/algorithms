@@ -14,4 +14,12 @@ Compiled from class work and online resources
   - [Bucket Sort - O(n log n)](./sorting/sorting.md#bucket-sort)
 
 ### Practice Problems
-- [Sorted Merge](./sorting/practice_problems/practice_problems.md#sorted-merge)
+  - [Sorted Merge](./sorting/practice_problems/practice_problems.md#sorted-merge)
+
+
+## Search
+  - [Linear Search](./search/search.md#linear-search)
+  - [Binary Search](./search/search.md#binary-search)
+
+### Practice Problems
+  - [Rotated Array Search](./search/practice_problems/practice_problems.md#search-in-rotated-array)
