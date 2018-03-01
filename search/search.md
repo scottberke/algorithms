@@ -18,10 +18,14 @@
 - In the best case, the element is first in the array and we search 1 item
 ```python
 def search(arr, target):
-	for index, val in enumerate(arr):			# Grab index and value
-		if val == target:						# If we find our target
-			return index						# Return index
-	return False 								# Otherwise, return False
+	# Grab index and value
+	for index, val in enumerate(arr):
+		# If we find our target
+		if val == target:						
+			# Return index
+			return index						
+	# Otherwise, return False		
+	return False 								
 ```
 - - - -
 
@@ -35,31 +39,40 @@ def search(arr, target):
 ```python
 # Binary Search - Recursive
 def search(arr, low, high, target):
-	if low > high:						# If low > high then target isnt in array
+	# If low > high then target isn't in array
+	if low > high:						
 		return False
-
-	mid = low + ((high - low) // 2)		# Find mid point
-	if arr[mid] == target:				# See if mid point matches target
-		return mid						# Return index if it does
-	elif arr[mid] > target:				# Search left half if mid point > target
+	# Find mid point
+	mid = low + ((high - low) // 2)		
+ 	# See if mid point matches target
+	if arr[mid] == target:				
+		# Return index if it does
+		return mid						
+	# Search left half if mid point > target
+	elif arr[mid] > target:				
 		return search(arr, low, mid - 1, target)
-	else:								# Search right half if mid point < target
+	# Search right half if mid point < target
+	else:								
 		return search(arr, mid + 1, high, target)
 
 # Binary Search - Iterative
 def search(arr, target):
-	low = 0						# Set low index
-	high = len(arr)				# Set high index
-
-	while low <= high:			# Repeat until low index > high index
-		mid = low + ((high - low) // 2) 	# Grab our mid point index
-
-		if arr[mid] == target:	# If value at midpoint is target, return index
+	# Set low and high index
+	low = 0						
+	high = len(arr)			
+	# Repeat until low index > high index
+	while low <= high:			
+		# Grab our mid point index
+		mid = low + ((high - low) // 2) 	
+		# If value at midpoint is target, return index
+		if arr[mid] == target:
 			return mid
-		elif arr[mid] > target:	# If midpoint value > target, increment high index
+		# If midpoint value > target, increment high index
+		elif arr[mid] > target:
 			high = mid - 1
-		else:					# If midpoint value < target, increment low index
+		# If midpoint value < target, increment low index
+		else:					
 			low = mid + 1
-
-	return False				# If we've made it here, target isnt found
+	# If we've made it here, target isnt found		
+	return False				
 ```
