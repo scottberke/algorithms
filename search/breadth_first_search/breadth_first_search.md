@@ -7,7 +7,12 @@ The complexity of a BFS is **O(V + E)** where V is the number of vertices and E 
 BFS can be used to find the shortest path between to vertices and is usually preferable over Depth First Search for this purpose.
 
 ## Implementation
+### Trees
 [Breadth First Search - Python](./breadth_first_search.py)
 [Breadth First Search Test Cases - Python](./breadth_first_search_test.py)
 [Breadth First Search With Path - Python](./breadth_first_search_w_path.py)
 [Breadth First Search With Path Test Cases - Python](./breadth_first_search_w_path_test.py)
+
+### Graphs
+[Breadth First Search Adjacency Matrix - Python](./bfs_adjacency_matrix.py)
+[Breadth First Search Adjacency Matrix Test Cases - Python](./bfs_adjacency_matrix_test.py)
