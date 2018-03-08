@@ -4,7 +4,7 @@ Breadth First Search (BFS) is used on either graphs or trees to traverse the dat
 
 The complexity of a BFS is **O(V + E)** where V is the number of vertices and E is the number of edges. You may wind up visiting each vertex and each edge if the target is not in the data structure.
 
-BFS can be used to find the shortest path between to vertices.
+BFS can be used to find the shortest path between to vertices and is usually preferable over Depth First Search for this purpose.
 
 ## Implementation
 [Breadth First Search - Python](./breadth_first_search.py)
