@@ -18,8 +18,9 @@ Compiled from class work and online resources
 
 
 ## Search
-  - [Linear Search](./search/search.md#linear-search)
-  - [Binary Search](./search/search.md#binary-search)
+  - [Linear Search - O(n)](./search/linear_search/linear_search.md)
+  - [Binary Search - O(log n)](./search/binary_search/binary_search.md)
+  - [Breadth First Search O(V + E)](./search/breadth_first_search/breadth_first_search.md)
 
 ### Practice Problems
   - [Rotated Array Search](./search/practice_problems/practice_problems.md#search-in-rotated-array)
