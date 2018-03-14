@@ -7,5 +7,5 @@
 	3. Perform the same operation on the corresponding side until you the element or nothing is left to search
 
 ## Implementation
-[Binary Search - Python](./binary_search.py)
-[Binary Search Test Cases - Python](./binary_search_test.py)
+- [Binary Search - Python](./binary_search.py)
+- [Binary Search Test Cases - Python](./binary_search_test.py)

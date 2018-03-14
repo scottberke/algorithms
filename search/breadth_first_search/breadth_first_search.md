@@ -8,11 +8,11 @@ BFS can be used to find the shortest path between to vertices and is usually pre
 
 ## Implementation
 ### Trees
-[Breadth First Search - Python](./breadth_first_search.py)
-[Breadth First Search Test Cases - Python](./breadth_first_search_test.py)
-[Breadth First Search With Path - Python](./breadth_first_search_w_path.py)
-[Breadth First Search With Path Test Cases - Python](./breadth_first_search_w_path_test.py)
+- [Breadth First Search - Python](./breadth_first_search.py)
+- [Breadth First Search Test Cases - Python](./breadth_first_search_test.py)
+- [Breadth First Search With Path - Python](./breadth_first_search_w_path.py)
+- [Breadth First Search With Path Test Cases - Python](./breadth_first_search_w_path_test.py)
 
 ### Graphs
-[Breadth First Search Adjacency Matrix - Python](./bfs_adjacency_matrix.py)
-[Breadth First Search Adjacency Matrix Test Cases - Python](./bfs_adjacency_matrix_test.py)
+- [Breadth First Search Adjacency Matrix - Python](./bfs_adjacency_matrix.py)
+- [Breadth First Search Adjacency Matrix Test Cases - Python](./bfs_adjacency_matrix_test.py)

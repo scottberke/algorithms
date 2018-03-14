@@ -24,3 +24,7 @@ Compiled from class work and online resources
 
 ### Practice Problems
   - [Rotated Array Search](./search/practice_problems/practice_problems.md#search-in-rotated-array)
+
+
+## Misc Concepts
+  - [Bottom-Up Algorithms Vs Recursion](./misc_concepts/bottom_up.md)
