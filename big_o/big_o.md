@@ -8,7 +8,7 @@
 
 #### Law of Addition and Multiplication for O()
 -  Focus on the dominant terms, dropping non-dominant terms
-- `O(n) + O(n + n) = O(n + n^2) = O(n^2)` <- because of dominant terms
+- `O(n) + O(n + n) = O(n + 2n) = O(n)` <- because of dominant terms
 	- Applicable for sequential operations
 - `O(n) * O(n) = O(n * n) = O(n^2)`
 	- Applicable with nested loops
