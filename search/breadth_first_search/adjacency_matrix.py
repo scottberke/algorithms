@@ -7,11 +7,10 @@ class AdjacencyMatrix():
         self.nodes = nodes
         self.matrix = [ [None] * nodes for i in range(nodes) ]
 
-    def add_edge(self, src, dest, weight=0):
+    def add_edge(self, src, dest, weight=None):
         if src >= self.nodes or dest >= self.nodes:
             raise AttributeError("Edge beyond matrix size")
 
-        weight = None if weight == 0 else weight
         self.matrix[src][dest] = weight
 
     def __str__(self):
