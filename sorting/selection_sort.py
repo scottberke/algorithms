@@ -13,7 +13,7 @@ def selection_sort(arr):
                 min_index = j
         # Swap the value in the next lowest index with the actual lowest value
     	arr[i], arr[min_index] = arr[min_index], arr[i]
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")

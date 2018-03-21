@@ -18,7 +18,7 @@ def bubble_sort(arr):
                 # If were here, we've made a swap on this iteration
                 swap_made = True
 
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")

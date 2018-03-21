@@ -6,7 +6,7 @@
 - Stable sort algorithms sort identical elements in the same order as they appear when inputed
 - - - -
 
-[Interview Questions](#interview-questions)
+- [Practice Problems](#interview-questions)
 
 
 ### Sorting Algorithms

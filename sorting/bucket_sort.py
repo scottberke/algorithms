@@ -22,7 +22,7 @@ def bucket_sort(arr):
 	# Return our flattened buckets
 	return [ val for sub_arr in buckets for val in sub_arr ]
 
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")

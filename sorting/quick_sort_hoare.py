@@ -37,7 +37,7 @@ def partition(arr, low, high):
 		# Otherwise, swap values at piv_low and piv_high index
         arr[piv_low], arr[piv_high] = arr[piv_high], arr[piv_low]
 
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")

@@ -41,7 +41,7 @@ def merge(first, second):
     # First or Second array is empty
     return merged + first[f_index:] + second[s_index:]
 
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")

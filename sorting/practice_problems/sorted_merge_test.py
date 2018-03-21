@@ -1,5 +1,4 @@
 import unittest
-
 from sorted_merge import *
 
 # Hints at bottom of page

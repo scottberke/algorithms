@@ -1,5 +1,4 @@
 import unittest
-
 from group_anagram import *
 
 # Note that order of elements once grouped doesnt matter according the the problem

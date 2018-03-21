@@ -11,7 +11,7 @@ def insertion_sort(arr):
             arr[i], arr[i-1] = arr[i-1], arr[i]
             i -= 1
 
-
+# TODO add proper test
 # Testing:
 arr = [ random.randrange(0,100) for i in range(0,100) ]
 print("Unsorted Array:")
