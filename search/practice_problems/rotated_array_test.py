@@ -25,7 +25,5 @@ class RotatedArrayTest(unittest.TestCase):
         self.assertFalse(res)
 
 
-
-
 if __name__ == '__main__':
     unittest.main()
