@@ -1,5 +1,4 @@
-
-### Big-O
+# Big-O
 - Describes performance or complexity of an algorithm by measuring the upper bound on asymptotic growth
 - Always assumes upper limit or max number of iterations and describes the worst case scenario
 - Expressed as rate of growth relative to input size

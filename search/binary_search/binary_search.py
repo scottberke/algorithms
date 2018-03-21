@@ -8,7 +8,7 @@ def recursive_search(arr, target):
     	if low > high:
     		return False
     	# Find mid point
-    	mid = low + ((high - low) // 2)
+    	mid = (high + low) // 2
      	# See if mid point matches target
     	if arr[mid] == target:
     		# Return index if it does
