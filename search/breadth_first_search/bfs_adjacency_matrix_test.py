@@ -31,8 +31,8 @@ class BFSAdjacencyMatrixTest(unittest.TestCase):
         matrix.matrix[3] = [0, 1, 0, 0, 0]
         matrix.matrix[2] = [0, 0, 0, 1, 0]
         completed_paths = breadth_first_search(matrix, 0, 4)
-        self.assertTrue(
-            not completed_paths
+        self.assertFalse(
+            completed_paths
         )
 
 if __name__ == "__main__":

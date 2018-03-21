@@ -28,8 +28,6 @@ class BreadthFirstSearchWithPathTreeTest(unittest.TestCase):
 
         return root
 
-
-
     # Tests
     def test_breadth_first_search_leaf_found(self):
         root = self.build_tree()
