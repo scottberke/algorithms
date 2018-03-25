@@ -17,3 +17,9 @@ Q) Imagine a robot sitting in the upper left corner of a grid with r rows and c 
 - Solution: [Robot In A Grid](./robot_in_grid.py)
 
 ***
+
+## Magic Index
+Q) A magic index in an array A[0..n-1] is defined to be an index such that A[i] == i. Given a sorted array of distinct integers, write a method to find a magic index, if one exists in array A.
+
+- Test Cases: [Magic Index](./magic_index_test.py)
+- Solution: [Magic Index](./magic_index.py)
