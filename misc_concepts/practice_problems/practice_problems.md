@@ -8,3 +8,12 @@ Q) A child is running up a staircase with n steps and can hop either 1 step, 2 s
 - Solution: [Triple Step](./triple_step.py)
 
 ***
+
+## Robot In A Grid
+Q) Imagine a robot sitting in the upper left corner of a grid with r rows and c columns. The robot can only move in two directions, right and down, but certain cells are off limits such that the robot cannot step on them. Design an algorithm to find a path for the robot from the top left to the bottom right.
+* CTCI lists this under Chapter 8 (Recursion and Dynamic Programing) but, given the wording of the problem, it would be odd not to approach this as a graph traversal problem. Solution below includes a breadth first search approach and a recursive search approach
+
+- Test Cases: [Robot In A Grid](./robot_in_grid_test.py)
+- Solution: [Robot In A Grid](./robot_in_grid.py)
+
+***
