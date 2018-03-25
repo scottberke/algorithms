@@ -27,3 +27,6 @@ Collection of helpful algorithms and related CS topics.
 
 ## Misc Concepts
   - [Bottom-Up Algorithms Vs Recursion](./misc_concepts/bottom_up.md)
+
+### Practice Problems
+  - [Triple Step](./misc_concepts/practice_problems/practice_problems.md#triple-step)
