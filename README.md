@@ -23,10 +23,11 @@ Collection of helpful algorithms and related CS topics.
 
 ### Practice Problems
   - [Rotated Array Search](./search/practice_problems/practice_problems.md#search-in-rotated-array)
-
+  - [Robot In A Grid](./misc_concepts/practice_problems/practice_problems.md#robot-in-a-grid)
 
 ## Misc Concepts
   - [Bottom-Up Algorithms Vs Recursion](./misc_concepts/bottom_up.md)
 
 ### Practice Problems
   - [Triple Step](./misc_concepts/practice_problems/practice_problems.md#triple-step)
+  - [Robot In A Grid](./misc_concepts/practice_problems/practice_problems.md#robot-in-a-grid)
