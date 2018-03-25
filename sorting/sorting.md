@@ -11,11 +11,11 @@
 
 ### Sorting Algorithms
 - [Selection Sort - O(n^2)](#selection-sort)  
-- Bubble Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
-- Bucket Sort
+- [Bubble Sort](#bubble-sort)
+- [Insertion Sort](#insertion-sort)
+- [Merge Sort](#merge-sort)
+- [Quick Sort](#quick-sort)
+- [Bucket Sort](#bucket-sort)
 
 ## Selection Sort
 ### Runtime
