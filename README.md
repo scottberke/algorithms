@@ -33,3 +33,4 @@ Collection of helpful algorithms and related CS topics.
   - [Triple Step](./misc_concepts/practice_problems/practice_problems.md#triple-step)
   - [Robot In A Grid](./misc_concepts/practice_problems/practice_problems.md#robot-in-a-grid)
   - [Magic Index](./misc_concepts/practice_problems/practice_problems.md#magic-index)
+  - [Permutations Of String](./misc_concepts/practice_problems/practice_problems.md#permutations-of-a-string)
