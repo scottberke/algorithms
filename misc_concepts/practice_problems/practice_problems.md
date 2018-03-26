@@ -23,3 +23,11 @@ Q) A magic index in an array A[0..n-1] is defined to be an index such that A[i] 
 
 - Test Cases: [Magic Index](./magic_index_test.py)
 - Solution: [Magic Index](./magic_index.py)
+
+***
+
+## Permutations Of A String
+Q) Write a program to return all permutations of a given string.
+
+- Test Cases: [String Permutations](./string_perm_test.py)
+- Solution: [String Permutations](./string_perm.py)
