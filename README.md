@@ -14,7 +14,8 @@ Collection of helpful algorithms and related CS topics.
 
 ### Practice Problems
   - [Sorted Merge](./sorting/practice_problems/practice_problems.md#sorted-merge)
-
+  - [Wiggle Sort](./sorting/practice_problems/practice_problems.md#wiggle-sort)
+  - [Group Anagram]((./sorting/practice_problems/practice_problems.md#group-anagrams)
 
 ## Search
   - [Linear Search - O(n)](./search/linear_search/linear_search.md)
