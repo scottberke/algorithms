@@ -15,3 +15,11 @@ Q) Write a method to sort an array of strings so that all the anagrams are next 
 
 - Test Cases: [Group Anagram](./group_anagram_test.py)
 - Solution: [Group Anagram](./group_anagram.py)
+
+***
+
+## Wiggle Sort
+Q) Given an unsorted array `nums`, reorder it in-place such that `nums[0] <= nums[1] >= nums[2] <= nums[3]....`.
+
+- Test Cases: [Wiggle Sort](./wiggle_sort_test.py)
+- Solution: [Wiggle Sort](./wiggle_sort.py)
