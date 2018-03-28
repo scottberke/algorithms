@@ -12,5 +12,3 @@ DFS can be used to find the shortest path between two vertices however, its more
 - [Depth First Search](./depth_first_search.py)
 
 ### Graphs
-- [Breadth First Search Adjacency Matrix - Python](./bfs_adjacency_matrix.py)
-- [Breadth First Search Adjacency Matrix Test Cases - Python](./bfs_adjacency_matrix_test.py)
