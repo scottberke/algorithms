@@ -3,8 +3,8 @@ from adjacency_matrix import *
 
 # Container for nodes to track path
 class NodeContainer():
-    def __init__(self, node, position, path=None):
-        self.position = position
+    def __init__(self, node, path=None):
+        self.location = node.location
         self.node = node
         if not path:
             self.path = []
@@ -13,8 +13,8 @@ class NodeContainer():
 
 # BFS search on matrix from source to destination
 def breadth_first_search(matrix, src, dest):
-    start = matrix.matrix[src]
-    start_container = NodeContainer(start, src)
+    start = matrix.get_node(src)
+    start_container = NodeContainer(start)
 
     queue = deque()
     queue.append(start_container)
@@ -23,9 +23,9 @@ def breadth_first_search(matrix, src, dest):
     while queue:
         node_container = queue.pop()
         current_node = node_container.node
-        for index, edge in enumerate(current_node):
+        for index, edge in enumerate(current_node.edges):
             if edge and index not in node_container.path:
-                new_node_container = NodeContainer(matrix.matrix[index], index, node_container.path + [node_container.position])
+                new_node_container = NodeContainer(matrix.get_node(index), node_container.path + [node_container.node.location])
                 queue.appendleft(new_node_container)
 
                 if index == dest:
