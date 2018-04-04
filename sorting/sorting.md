@@ -16,6 +16,7 @@
 - [Merge Sort](#merge-sort)
 - [Quick Sort](#quick-sort)
 - [Bucket Sort](#bucket-sort)
+- [Radix Sort](#radix-sort)
 
 ## Selection Sort
 ### Runtime
@@ -40,8 +41,8 @@ This sort works in-place and is a comparison sort. It works by iteratively selec
 4. Place that at the end of the sorted array
 5. Repeat until nothing remains in the unsorted array
 
-### Examples:
-- [Python](./selection_sort.py)
+### Implementation:
+- [Selection Sort](./selection_sort.py)
 
 - - - -
 
@@ -69,8 +70,8 @@ This sort works in-place and is a comparison sort. It works by iteratively evalu
 5. Record that a swap has been made
 6. Repeat until no swaps have been made
 
-### Examples:
-- [Python](./bubble_sort.py)
+### Implementation:
+- [Bubble Sort](./bubble_sort.py)
 
 - - - -
 
@@ -97,9 +98,9 @@ This sort works in-place and is stable. It works by building a final sorted arra
 	1. Backtrack through sorted array from i-1 to zero
 	2. If the value being inserted is < element in sorted side, swap them
 
-### Examples:
-- [Python](./insertion_sort.py)
-- [Python - Recursive](./insertion_sort_recur.py)
+### Implementation:
+- [Insertion Sort](./insertion_sort.py)
+- [Insertion Sort - Recursive](./insertion_sort_recur.py)
 
 - - - -
 
@@ -118,7 +119,7 @@ This sort considered to be an efficient, comparison based, general purpose sorti
 
 ### Use Cases:
 - Considered more efficient for large sets of data when compared to other sorts such as selection, insertion and bubble
-- Often choosen when sorting linked lists
+- Often used when sorting linked lists
 
 ### Steps:
 1. Find the middle point of the array to be sorted
@@ -132,8 +133,8 @@ This sort considered to be an efficient, comparison based, general purpose sorti
 	5. Return merged array with any remaining values from remaining side which are implicitly sorted/higher than merged arrays highest value
 
 
-### Examples:
-- [Python](./merge_sort.py)
+### Implementation:
+- [Merge Sort](./merge_sort.py)
 
 - - - -
 
@@ -169,9 +170,9 @@ Quick sort is another divide and conquer sorting algorithm that works in-place a
 	7. Swap pivot value with pivot index value
 3. Call QuickSort on the remaining sides > and < the pivot point
 
-### Examples:
-- [Python - Lomuto Partition](./quick_sort.py)
-- [Python - Hoare Partition](./quick_sort_hoare.py)
+### Implementation:
+- [Quick Sort - Lomuto Partition](./quick_sort.py)
+- [Quick Sort - Hoare Partition](./quick_sort_hoare.py)
 
 
 ***
@@ -195,15 +196,30 @@ Bucket sort is another divide and conquer sort. It works by putting the array in
 5. Sort each of the buckets with any sorting algorithm
 6. Return flattened array of buckets
 
-### Examples:
-- [Python](./bucket_sort.py)
+### Implementation:
+- [Bucket Sort](./bucket_sort.py)
 
+## Radix Sort
+### Runtime:
+**O(wn)** Where n is the number of keys and w is the word or digit size
+Memory: O(w + n)
+
+### Description:
+Radix sort is similar to bucket sort in that it is a non-comparative sort. Keys are used to group individual digits which have the same significant position. Radix sort is a stable sort meaning that equal value items will remain in relative order. In large applications, radix sort is a speedier alternative than comparison based sorts.
+
+### Steps (Least Significant Digit):
+1. A key for each value is placed into one level of buckets that corresponds to the value of the right most digit. Order is preserved as they keys are placed.
+2. Repeat the process for each next neighboring significant digit 	   
+
+### Implementation
+- [Radix Sort](./radix_sort.py)
+- [Radix Sort Test Cases](./radix_sort_test.py)
 ### Heap Sort
 TODO
 ***
 
-### Radix Sort
-TODO
+
+
 
 
 ## Interview Questions
