@@ -1,5 +1,5 @@
 import unittest
-from wiggle_sort import *
+from practice_problems.sort.wiggle_sort import *
 
 import random
 class WiggleSortTest(unittest.TestCase):

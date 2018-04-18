@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from recursive_multiply import *
+from practice_problems.misc_concepts.recursive_multiply import *
 
 class RecursiveMultiplyTest(unittest.TestCase):
     def test_recursive_multiply_simple(self):

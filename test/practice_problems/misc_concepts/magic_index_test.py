@@ -1,5 +1,5 @@
 import unittest
-from magic_index import *
+from practice_problems.misc_concepts.magic_index import *
 
 class MagicIndexTest(unittest.TestCase):
     def test_magic_index(self):

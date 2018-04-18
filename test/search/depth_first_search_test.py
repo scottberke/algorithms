@@ -1,6 +1,6 @@
 import unittest
 import random
-from depth_first_search import *
+from algorithms.search.depth_first_search.depth_first_search import *
 
 class DepthFirstSearchTreeTest(unittest.TestCase):
     # Helpers

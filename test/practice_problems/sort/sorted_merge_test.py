@@ -1,5 +1,5 @@
 import unittest
-from sorted_merge import *
+from practice_problems.sort.sorted_merge import *
 
 # Hints at bottom of page
 

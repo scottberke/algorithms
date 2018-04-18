@@ -1,5 +1,5 @@
 from collections import deque
-from adjacency_matrix import *
+from algorithms.search.breadth_first_search.adjacency_matrix import *
 
 # Container for nodes to track path
 class NodeContainer():

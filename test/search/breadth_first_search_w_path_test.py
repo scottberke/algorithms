@@ -1,6 +1,6 @@
 import unittest
 import random
-from breadth_first_search_w_path import *
+from algorithms.search.breadth_first_search.breadth_first_search_w_path import *
 
 class BreadthFirstSearchWithPathTreeTest(unittest.TestCase):
     # Helpers

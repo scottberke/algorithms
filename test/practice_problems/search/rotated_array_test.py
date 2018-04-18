@@ -1,7 +1,7 @@
 import unittest
 import random
 from collections import *
-from rotated_array import *
+from practice_problems.search.rotated_array import *
 
 class RotatedArrayTest(unittest.TestCase):
     def create_rotated_array(self, skip=1, high=100):

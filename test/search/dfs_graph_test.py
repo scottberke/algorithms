@@ -2,7 +2,7 @@ import unittest
 from io import StringIO
 from contextlib import *
 
-from dfs_graph import *
+from algorithms.search.depth_first_search.dfs_graph import *
 
 
 class DFSGraphTest(unittest.TestCase):

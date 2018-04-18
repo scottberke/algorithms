@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from radix_sort import *
+from algorithms.sort.radix_sort import *
 
 class LSDRadixSortTest(unittest.TestCase):
     def test_radix_sort_simple(self):

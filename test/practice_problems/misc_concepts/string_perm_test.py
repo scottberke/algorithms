@@ -1,6 +1,6 @@
 import unittest
 from itertools import *
-from string_perm import *
+from practice_problems.misc_concepts.string_perm import *
 
 class StringPermTest(unittest.TestCase):
     def test_string_perm_simple(self):

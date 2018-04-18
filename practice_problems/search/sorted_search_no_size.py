@@ -51,6 +51,6 @@ def list_down(arr, value, start=0, end=0):
     if arr[mid] == value:
         return mid
     elif arr[mid] > value or arr[mid] == -1:
-        return list_down(arr, value, start, mid)
+        return list_down(arr, value, start, mid-1)
     elif arr[mid] < value:
         return list_down(arr, value, mid+1, end)

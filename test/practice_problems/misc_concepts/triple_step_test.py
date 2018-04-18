@@ -1,5 +1,5 @@
 import unittest
-from triple_step import *
+from practice_problems.misc_concepts.triple_step import *
 
 class TripleStepTest(unittest.TestCase):
     def test_triple_step_1(self):

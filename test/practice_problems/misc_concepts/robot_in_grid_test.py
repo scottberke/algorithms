@@ -1,5 +1,5 @@
 import unittest
-from robot_in_grid import *
+from practice_problems.misc_concepts.robot_in_grid import *
 
 class RobotInGridTest(unittest.TestCase):
     def test_path_1(self):

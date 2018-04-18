@@ -1,5 +1,5 @@
 import unittest
-from group_anagram import *
+from practice_problems.sort.group_anagram import *
 
 # Note that order of elements once grouped doesnt matter according the the problem
 # So, these test cant be modified if your approach doesnt leave them in the exact
