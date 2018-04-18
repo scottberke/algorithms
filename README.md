@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/scottberke/algorithms.svg?branch=master)](https://travis-ci.org/scottberke/algorithms)
 # Algorithms
 Collection of helpful algorithms and related CS topics.
 
