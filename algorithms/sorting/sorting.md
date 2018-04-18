@@ -149,7 +149,7 @@ Quick sort is another divide and conquer sorting algorithm that works in-place a
 - We pick a partition spot, usually the last element, and move all elements lower than the partitions value before it and all elements higher than partition spot after it. Basically,  putting the value of the partition index in its correct spot on each call and then updating the call to take the elements below and the elements above it
 - Heavy lifting takes place in the partition step
 - Performance varies depending on how or where you choose your partition pivot
-- Not stable ie same value elements dont remain in the same order
+- Not stable ie same value elements don't remain in the same order
 - Two popular partition schemes: Lomuto and Hoare
 	- Hoare is considered more performant
 
@@ -183,14 +183,14 @@ Quick sort is another divide and conquer sorting algorithm that works in-place a
 Memory: O(n*k)
 
 ### Description:
-Bucket sort is another divide and conquer sort. It works by putting the array into a series of buckets distributed in the range of the data and then sorts the buckets before recombinding them. This sort works best when you have a uniformly distributed data set
+Bucket sort is another divide and conquer sort. It works by putting the array into a series of buckets distributed in the range of the data and then sorts the buckets before recombining them. This sort works best when you have a uniformly distributed data set
 
 ### Use Cases:
 - Good for data like sorting people based on age when the values are uniformly distributed
 
 ### Steps:
 1. Get max value and length from array being sorted
-2. Create an array of buckets thats the lenght of the array being sorted
+2. Create an array of buckets thats the length of the array being sorted
 3. Iterate through the array being sorted
 4. Place values into buckets corresponding to the value * array length / max value + 1
 5. Sort each of the buckets with any sorting algorithm
@@ -214,13 +214,11 @@ Radix sort is similar to bucket sort in that it is a non-comparative sort. Keys 
 ### Implementation
 - [Radix Sort](./radix_sort.py)
 - [Radix Sort Test Cases](./radix_sort_test.py)
+
+
 ### Heap Sort
 TODO
 ***
 
-
-
-
-
-## Interview Questions
-- [Sorted Merge](./interview_questions.md#sorted-merge)
+## Practice Problems
+- [Sorted Merge](./practice_problems/practice_problems.md#sorted-merge)

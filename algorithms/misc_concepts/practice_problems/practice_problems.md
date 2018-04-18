@@ -31,3 +31,19 @@ Q) Write a program to return all permutations of a given string.
 
 - Test Cases: [String Permutations](./string_perm_test.py)
 - Solution: [String Permutations](./string_perm.py)
+
+***
+
+## English Int
+Q) Given any integer, print an english phrase that describes the integer. (ie: "One Thousand, Two Hundred Thirty Four")
+
+- Test Cases: [English Int](./english_int_test.py)
+- Solution: [English Int](./english_int.py)
+
+***
+
+## Recursive Multiply
+Q) Write a recursive function to multiply two positive integers without using the * operator. You can use addition, subtraction, and bit shifting, but you should minimize the number of those operations.
+
+- Test Cases: [Recursive Multiply](./recursive_multiply_test.py)
+- Solution: [Recursive Multiply](./recursive_multiply.py)

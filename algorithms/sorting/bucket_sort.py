@@ -9,7 +9,7 @@ def bucket_sort(arr):
 	# Get our array length
 	arr_len = len(arr)
 	# Create empty buckets to hold elements
-	buckets = [ [] for i in range(arr_len) ]
+	buckets = [ [] for _ in range(arr_len) ]
 	# Iterate through array placeing elements into appropriate buckets
 	for i in range(arr_len):
 		# Bucket determined by value * array length // max value + 1

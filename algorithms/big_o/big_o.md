@@ -85,6 +85,7 @@ while i < n:
 	- Doubling the size of an input does little to cause growth after the first iteration
 - Size of input is reduced by a constant factor at each step
 - Examples: Binary Search, Bisection search
+
 ```python
 # Assumes n is a sorted array and we want to find a value
 low = 0
