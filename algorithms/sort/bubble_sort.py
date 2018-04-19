@@ -1,5 +1,3 @@
-import random
-
 def bubble_sort(arr):
     # Keeps track of whether or not a swap occured
     swap_made = True
@@ -17,12 +15,4 @@ def bubble_sort(arr):
                 arr[i], arr[i+1] = arr[i+1], arr[i]
                 # If were here, we've made a swap on this iteration
                 swap_made = True
-
-# TODO add proper test
-# Testing:
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-print("Unsorted Array:")
-print(arr)
-bubble_sort(arr)
-print("Sorted Array:")
-print(arr)
+    return arr
