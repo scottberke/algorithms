@@ -1,4 +1,3 @@
-import random
 
 def merge_sort(arr):
     # Array len of 1 is already sorted so just return
@@ -43,8 +42,3 @@ def merge(first, second):
 
 # TODO add proper test
 # Testing:
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-print("Unsorted Array:")
-print(arr)
-print("Sorted Array:")
-print(merge_sort(arr))
