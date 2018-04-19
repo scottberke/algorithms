@@ -1,4 +1,3 @@
-import random
 # QuickSort - Hoare Partition
 def quick_sort(arr, low, high):
 	# Keep going while our low and high values don't cross
@@ -36,13 +35,3 @@ def partition(arr, low, high):
             return piv_high
 		# Otherwise, swap values at piv_low and piv_high index
         arr[piv_low], arr[piv_high] = arr[piv_high], arr[piv_low]
-
-# TODO add proper test
-# Testing:
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-print("Unsorted Array:")
-print(arr)
-print("Sorted Array:")
-
-quick_sort(arr, 0, len(arr) - 1)
-print(arr)

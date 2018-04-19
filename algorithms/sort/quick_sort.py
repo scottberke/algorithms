@@ -1,4 +1,3 @@
-import random
 # QuickSort - Lomuto Partition
 # Consumes the array to be sorted, the low index, usually 0, and the high index
 def quick_sort(arr, low, high):
@@ -35,14 +34,3 @@ def partition(arr, low, high):
 	arr[piv_index], arr[high] = arr[high], arr[piv_index]
 	# Return the index of where we just sorted
 	return piv_index
-
-
-
-# TODO add proper test
-# Testing:
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-print("Unsorted Array:")
-print(arr)
-print("Sorted Array:")
-quick_sort(arr, 0, len(arr) - 1)
-print(arr)
