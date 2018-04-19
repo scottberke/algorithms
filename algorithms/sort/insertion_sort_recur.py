@@ -1,5 +1,3 @@
-import random
-
 def insertion_sort(arr, start=0):
     # If were at the end, arrays sorted
     if start == len(arr):
@@ -17,12 +15,3 @@ def insertion_sort(arr, start=0):
             index -= 1
         # Call sort again with next element
         return insertion_sort(arr,start+1)
-
-# TODO add proper test
-# Testing:
-arr = [ random.randrange(0,100) for i in range(0,100) ]
-print("Unsorted Array:")
-print(arr)
-insertion_sort(arr)
-print("Sorted Array:")
-print(arr)
