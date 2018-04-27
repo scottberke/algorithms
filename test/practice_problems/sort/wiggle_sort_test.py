@@ -1,7 +1,8 @@
 import unittest
+import random
+
 from practice_problems.sort.wiggle_sort import *
 
-import random
 class WiggleSortTest(unittest.TestCase):
     # Helpers
     def check_result(self, result):

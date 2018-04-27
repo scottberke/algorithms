@@ -1,5 +1,6 @@
 import unittest
-from algorithms.misc_concepts.practice_problems.english_int import *
+
+from practice_problems.misc_concepts.english_int import *
 
 class EnglishIntTest(unittest.TestCase):
     def test_small_int_one(self):

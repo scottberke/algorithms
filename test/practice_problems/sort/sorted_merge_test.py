@@ -1,7 +1,6 @@
 import unittest
-from practice_problems.sort.sorted_merge import *
 
-# Hints at bottom of page
+from practice_problems.sort.sorted_merge import *
 
 class SortedMergeTest(unittest.TestCase):
     def test_merge(self):
@@ -45,6 +44,3 @@ class SortedMergeTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-# Hint: Try working from the end to the begining

@@ -1,5 +1,6 @@
 import unittest
 import random
+
 from algorithms.search.depth_first_search.depth_first_search import *
 
 class DepthFirstSearchTreeTest(unittest.TestCase):

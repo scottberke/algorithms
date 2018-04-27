@@ -1,7 +1,7 @@
 import unittest
 import random
-from practice_problems.search.sorted_search_no_size import *
 
+from practice_problems.search.sorted_search_no_size import *
 
 class SortedSearchNoSizeTest(unittest.TestCase):
     def test_sorted_search_found(self):

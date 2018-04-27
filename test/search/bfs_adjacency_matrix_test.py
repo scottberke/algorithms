@@ -1,4 +1,5 @@
 import unittest
+
 from algorithms.search.breadth_first_search.bfs_adjacency_matrix import *
 
 class BFSAdjacencyMatrixTest(unittest.TestCase):

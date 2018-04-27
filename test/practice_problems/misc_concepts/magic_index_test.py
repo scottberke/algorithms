@@ -1,4 +1,5 @@
 import unittest
+
 from practice_problems.misc_concepts.magic_index import *
 
 class MagicIndexTest(unittest.TestCase):

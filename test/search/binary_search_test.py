@@ -1,6 +1,7 @@
 import unittest
-from algorithms.search.binary_search.binary_search import *
 import random
+
+from algorithms.search.binary_search.binary_search import *
 
 class BinarySearchTest(unittest.TestCase):
     def test_iterative_binary_search_found(self):

@@ -1,6 +1,7 @@
 import unittest
-from algorithms.search.linear_search.linear_search import *
 import random
+
+from algorithms.search.linear_search.linear_search import *
 
 class LinearSearchTest(unittest.TestCase):
     def test_linear_search_found(self):

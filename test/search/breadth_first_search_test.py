@@ -1,5 +1,6 @@
 import unittest
 import random
+
 from algorithms.search.breadth_first_search.breadth_first_search import *
 
 class BreadthFirstSearchTreeTest(unittest.TestCase):

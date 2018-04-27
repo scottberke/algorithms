@@ -1,6 +1,7 @@
 import unittest
 import random
 from collections import *
+
 from practice_problems.search.rotated_array import *
 
 class RotatedArrayTest(unittest.TestCase):

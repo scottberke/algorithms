@@ -11,4 +11,4 @@ def swap(index_1, index_2, arr):
     arr[index_1], arr[index_2] = arr[index_2], arr[index_1]
 
 def is_even(index):
-    return index%2 == 0
+    return index % 2 == 0
