@@ -12,4 +12,4 @@
 
 ## Implementation
 - [Linear Search - Python](./linear_search.py)
-- [Linear Search Test Cases - Python](./linear_search_test.py)
+- [Linear Search Test Cases - Python](../../../test/search/linear_search_test.py)
