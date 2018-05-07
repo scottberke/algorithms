@@ -6,24 +6,27 @@ Collection of helpful algorithms and related CS topics.
   - [Big-O](./algorithms/big_o/big_o.md)
 
 ## Sorting
-  - [Selection Sort - O(n^2)](./algorithms/sorting/sorting.md#selection-sort)
-  - [Bubble Sort - O(n^2)](./algorithms/sorting/sorting.md#bubble-sort)
-  - [Insertion Sort - O(n^2)](./algorithms/sorting/sorting.md#insertion-sort)
-  - [Merge Sort - O(n log n)](./algorithms/sorting/sorting.md#merge-sort)
-  - [Quick Sort - O(n log n)](./algorithms/sorting/sorting.md#quick-sort)
-  - [Bucket Sort - O(n log n)](./algorithms/sorting/sorting.md#bucket-sort)
-  - [Radix Sort - O(nk)](./algorithms/sorting/sorting.md#radix-sort)
+  - [Selection Sort - O(n^2)](./algorithms/sort/sorting.md#selection-sort)
+  - [Bubble Sort - O(n^2)](./algorithms/sort/sorting.md#bubble-sort)
+  - [Insertion Sort - O(n^2)](./algorithms/sort/sorting.md#insertion-sort)
+  - [Merge Sort - O(n log n)](./algorithms/sort/sorting.md#merge-sort)
+  - [Quick Sort - O(n log n)](./algorithms/sort/sorting.md#quick-sort)
+  - [Bucket Sort - O(n log n)](./algorithms/sort/sorting.md#bucket-sort)
+  - [Radix Sort - O(nk)](./algorithms/sort/sorting.md#radix-sort)
 
 ### Practice Problems
-  - [Sorted Merge](./algorithms/sorting/practice_problems/practice_problems.md#sorted-merge)
-  - [Wiggle Sort](./algorithms/sorting/practice_problems/practice_problems.md#wiggle-sort)
-  - [Group Anagram](./algorithms/sorting/practice_problems/practice_problems.md#group-anagrams)
+  - [Sorted Merge](./algorithms/sort/practice_problems/practice_problems.md#sorted-merge)
+  - [Wiggle Sort](./algorithms/sort/practice_problems/practice_problems.md#wiggle-sort)
+  - [Group Anagram](./algorithms/sort/practice_problems/practice_problems.md#group-anagrams)
 
 ## Search
   - [Linear Search - O(n)](./algorithms/search/linear_search/linear_search.md)
   - [Binary Search - O(log n)](./algorithms/search/binary_search/binary_search.md)
+
+### Graph And Tree Search
   - [Breadth First Search O(V + E)](./algorithms/search/breadth_first_search/breadth_first_search.md)
   - [Depth First Search O(V + E)](./algorithms/search/depth_first_search/depth_first_search.md)
+  - [Dijkstra's Algorithm](./algorithms/search/dijkstras_algorithm/dijkstras_algorithm.md)
 
 ### Practice Problems
   - [Rotated Array Search](./algorithms/search/practice_problems/practice_problems.md#search-in-rotated-array)
