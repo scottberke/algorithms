@@ -8,4 +8,4 @@
 
 ## Implementation
 - [Binary Search - Python](./binary_search.py)
-- [Binary Search Test Cases - Python](./binary_search_test.py)
+- [Binary Search Test Cases - Python](../../../test/search/binary_search_test.py)

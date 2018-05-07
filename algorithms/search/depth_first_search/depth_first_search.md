@@ -8,7 +8,7 @@ DFS can be used to find the shortest path between two vertices however, its more
 
 ## Implementation
 ### Trees
-- [Depth First Search - Test Cases](./depth_first_search_test.py)
+- [Depth First Search - Test Cases](../../../test/search/depth_first_search_test.py)
 - [Depth First Search](./depth_first_search.py)
 
 ### Graphs
