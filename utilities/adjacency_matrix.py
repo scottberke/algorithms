@@ -40,3 +40,8 @@ class AdjacencyMatrix():
         for node in self.matrix:
             matrix += (str(node) + "\n")
         return matrix
+
+
+class Test():
+    def __init__(self, a):
+        self.a = a
