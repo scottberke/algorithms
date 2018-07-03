@@ -187,7 +187,11 @@ Quick sort is another divide and conquer sorting algorithm that works in-place a
 ### Implementation:
 - [Quick Sort - Lomuto Partition](./quick_sort.py)
 - [Quick Sort - Hoare Partition](./quick_sort_hoare.py)
+- [Quick Sort Lomuto Test Cases - Python](./../../test/sort/quick_sort_test.py)
+- [Quick Sort Hoare Test Cases - Python](./../../test/sort/quick_sort_hoare_test.py)
 
+- [Quick Sort - Ruby](./quick_sort.rb)
+- [Quick Sort Test Cases - Ruby](./../../spec/sort/quick_sort_spec.rb)
 
 ***
 
