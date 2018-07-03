@@ -145,8 +145,11 @@ This sort considered to be an efficient, comparison based, general purpose sorti
 
 
 ### Implementation:
-- [Merge Sort](./merge_sort.py)
+- [Merge Sort - Python](./merge_sort.py)
+- [Merge Sort Test Cases - Python](./../../test/sort/merge_sort_test.py)
 
+- [Merge Sort - Ruby](./merge_sort.rb)
+- [Merge Sort Test Cases - Ruby](./../../spec/sort/merge_sort_spec.rb)
 - - - -
 
 ## Quick Sort
