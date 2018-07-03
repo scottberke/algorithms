@@ -42,8 +42,11 @@ This sort works in-place and is a comparison sort. It works by iteratively selec
 5. Repeat until nothing remains in the unsorted array
 
 ### Implementation:
-- [Selection Sort](./selection_sort.py)
+- [Selection Sort - Python](./selection_sort.py)
+- [Selection Sort Test Cases - Python](./../../test/sort/selection_sort_test.py)
 
+- [Selection Sort - Ruby](./selection_sort.rb)
+- [Selection Sort Test Cases - Ruby](./../../spec/sort/selection_sort_spec.rb)
 - - - -
 
 ## Bubble Sort
