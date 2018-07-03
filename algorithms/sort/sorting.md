@@ -216,6 +216,10 @@ Bucket sort is another divide and conquer sort. It works by putting the array in
 
 ### Implementation:
 - [Bucket Sort](./bucket_sort.py)
+- [Bucket Sort Test Cases - Python](./../../test/sort/bucket_sort_test.py)
+
+- [Bucket Sort - Ruby](./bucket_sort.rb)
+- [Bucket Sort Test Cases - Ruby](./../../spec/sort/bucket_sort_spec.rb)
 
 ## Radix Sort
 ### Runtime:
