@@ -74,7 +74,11 @@ This sort works in-place and is a comparison sort. It works by iteratively evalu
 6. Repeat until no swaps have been made
 
 ### Implementation:
-- [Bubble Sort](./bubble_sort.py)
+- [Bubble Sort - Python](./bubble_sort.py)
+- [Bubble Sort Test Cases- Python](./../../test/sort/bubble_sort_test.py)
+
+- [Bubble Sort - Ruby](./bubble_sort.rb)
+- [Bubble Sort Test Cases - Ruby](./../../spec/sort/bubble_sort_spec.rb)
 
 - - - -
 
@@ -104,7 +108,11 @@ This sort works in-place and is stable. It works by building a final sorted arra
 ### Implementation:
 - [Insertion Sort](./insertion_sort.py)
 - [Insertion Sort - Recursive](./insertion_sort_recur.py)
+- [Insertion Sort Test Cases - Python](./../../test/sort/insertion_sort_test.py)
+- [Insertion Sort Recursive Test Cases - Python](./../../test/sort/insertion_sort_recursive_test.py)
 
+- [Insertion Sort - Ruby](./insertion_sort.rb)
+- [Insertion Sort Test Cases - Ruby](./../../spec/sort/insertion_sort_spec.rb)
 - - - -
 
 ## Merge Sort
