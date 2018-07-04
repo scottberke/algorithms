@@ -234,9 +234,11 @@ Radix sort is similar to bucket sort in that it is a non-comparative sort. Keys 
 2. Repeat the process for each next neighboring significant digit 	   
 
 ### Implementation
-- [Radix Sort](./radix_sort.py)
-- [Radix Sort Test Cases](./radix_sort_test.py)
+- [Radix Sort - Python](./radix_sort.py)
+- [Radix Sort Test Cases - Python](./../../test/sort/radix_sort_test.py)
 
+- [Radix Sort - Ruby](./radix_sort.rb)
+- [Radix Sort Test Cases - Ruby](./../../spec/sort/radix_sort_spec.rb)
 
 ### Heap Sort
 TODO
