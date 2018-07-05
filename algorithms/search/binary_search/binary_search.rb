@@ -29,6 +29,4 @@ def binary_search_iterative(data, target)
       high = mid
     end
   end
-
-  nil
 end
