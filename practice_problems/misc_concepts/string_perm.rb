@@ -10,5 +10,6 @@ def string_perm(string, result: [], base: '')
     new_base = base + char
     string_perm(remaining_string, result: result, base: new_base)
   end
+
   result
 end
